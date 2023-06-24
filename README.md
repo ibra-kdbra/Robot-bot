@@ -1,8 +1,47 @@
-# RoderBot
+# ChatBot Quickstart
 
+This is a minimalist starting point for a chat bot, written in Python. It uses the OpenAI API. Easily edit the system prompt to create a unique AI personality or function.
 
-This repo contains various scripts to be executed by a bot. (The bot must make use of pywikibot to handle throttling, auth etc.)
+![Screenshot](https://github.com/ibra-kdbra/Robot-bot/blob/main/example.png)
 
-It also includes files containing snippets of useful code for automating boring tasks. (generating files etc.)
+## Setup
 
-Run `pwb login` in the venv console to login. It will prompt you for the password for the users listed in the user-config.py file.
+1. If you don’t have Python installed, [install it from here](https://www.python.org/downloads/).
+
+2. Clone this repository.
+
+3. Navigate into the project directory:
+
+   ```bash
+   $ cd Python-Flask-Chatbot-Quickstart
+   ```
+
+4. Create a new virtual environment:
+
+   ```bash
+   $ python3 -m venv venv
+   $ . venv/bin/activate
+   ```
+
+5. Install the requirements:
+
+   ```bash
+   $ pip install -r requirements.txt
+   ```
+
+6. Make a copy of the example environment variables file:
+
+   ```bash
+   $ cp .env.example .env
+   ```
+
+7. Add your [API key](https://beta.openai.com/account/api-keys) to the newly created `.env` file.
+
+8. Tell the AI how to behave by editing the file templates/system_prompt.txt.
+9. Run the app:
+
+   ```bash
+   $ flask run
+   ```
+
+You should now be able to access the app at [http://localhost:5000](http://localhost:5000)! To learn more, check out the [Open AI tutorial](https://beta.openai.com/docs/quickstart).
