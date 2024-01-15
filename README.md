@@ -13,26 +13,26 @@ This is a minimalist starting point for a chat bot, written in Python. It uses t
 3. Navigate into the project directory:
 
    ```bash
-   $ cd Python-Flask-Chatbot-Quickstart
+   cd ROBOT-BOT
    ```
 
 4. Create a new virtual environment:
 
    ```bash
-   $ python3 -m venv venv
-   $ . venv/bin/activate
+   python3 -m venv venv
+   . venv/bin/activate
    ```
 
 5. Install the requirements:
 
    ```bash
-   $ pip install -r requirements.txt
+   pip install -r requirements.txt
    ```
 
 6. Make a copy of the example environment variables file:
 
    ```bash
-   $ cp .env.example .env
+   cp .env.example .env
    ```
 
 7. Add your [API key](https://beta.openai.com/account/api-keys) to the newly created `.env` file.
@@ -41,7 +41,7 @@ This is a minimalist starting point for a chat bot, written in Python. It uses t
 9. Run the app:
 
    ```bash
-   $ flask run
+   flask run
    ```
 
 You should now be able to access the app at [http://localhost:5000](http://localhost:5000)! To learn more, check out the [Open AI tutorial](https://beta.openai.com/docs/quickstart).
